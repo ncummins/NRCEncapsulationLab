@@ -11,20 +11,60 @@ import java.util.Date;
  * @version     1.01
  */
 public class Employee {
-    String firstName;
-    String lastName;
-    public String ssn;
-    public Date birthDate;
-    boolean metWithHr;
-    boolean metDeptStaff;
-    boolean reviewedDeptPolicies;
-    boolean movedIn;
-    String cubeId;
+    private String firstName;
+    private String lastName;
+    private String ssn;
+    private boolean metWithHr;
+    private boolean metDeptStaff;
+    private boolean reviewedDeptPolicies;
+    private boolean movedIn;
+    private String cubeId;
 
     public Employee() {
 
     }
+    
+    //start of getters and setters
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public void setFirstName(String firstName) {
+        //needs validation
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        //needs validation
+        this.lastName = lastName;
+    }
+
+    public String getSsn() {
+        return ssn;
+    }
+    
+    public void setSsn(String ssn) {
+        //needs validation
+        this.ssn = ssn;
+    }
+    
+    public String getCubeId() {
+        return cubeId;
+    }
+
+    public void setCubeId(String cubeId) {
+        //needs validation
+        this.cubeId = cubeId;
+    }
+    //end of getters and setters
+
+    
+    
+    
     // Assume this must be performed first
     public void meetWithHrForBenefitAndSalryInfo() {
         metWithHr = true;
